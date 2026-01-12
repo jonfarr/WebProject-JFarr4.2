@@ -67,3 +67,17 @@ body {
     color: #F2F4F7;
     text-decoration: none;
 }
+
+/*---------------------------HERO---------------------------*/
+.hero {
+    height: 300px;
+    background: #F2F4F7;
+    color: #244C72;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 5px solid #244C72;
+}
