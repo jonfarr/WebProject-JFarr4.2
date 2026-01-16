@@ -41,6 +41,7 @@ body {
 
 /*---------------------------NAVIGATION MENU---------------------------*/
 /*--MAIN BUTTONS--*/
+
 .main-nav ul {
     background: #244C72;
     display: flex;
@@ -70,7 +71,7 @@ body {
 
 /*---------------------------HERO---------------------------*/
 .hero {
-    height: 300px;
+    height: 250px;
     background: #F2F4F7;
     color: #244C72;
     font-weight: bold;
@@ -106,6 +107,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 16px;
     padding: 16px;
+    
 }
 
 .img-grid img {
@@ -115,6 +117,66 @@ body {
     object-fit: cover;
     border-radius: 8px; 
 }
+
+/*---------------------------WHY - TOP/BOTOM PILL SECTION + PORTAL---------------------------*/
+.why-mcast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 32px 0;
+}
+
+/* TOP CONTENT */
+.why-title {
+    background: #244C72;
+    color: #F2F4F7;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* BOTTOM CONTENT */
+.why-content {
+    background: #244C72;
+    color: #F2F4F7;
+    padding: 14px 20px;
+    border-radius: 16px;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* PORTAL BUTTON SPACING */
+.portal-links{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 16px 0;
+}
+
+/* NEWS */
+.news-card-under{
+    max-width: 900px;
+    margin: 24px auto;
+    border: 10px solid #244C72;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #F2F4F7;
+}
+
+.news-card-under img{
+    width: 100%;
+    display: block;
+}
+
+.news-under-actions{
+    padding: 14px;
+    text-align: right;
+}
+
 /*---------------------------FOOTER---------------------------*/
 .site-footer {
     background-color: #244C72;
@@ -212,4 +274,213 @@ body {
 /*MOBILE*/
 @media (max-width: 600px) {
 
+}
+
+.institutes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* CARD / BUTTON STYLE */
+.institute-card {
+    background:#F2F4F7;
+    border-radius: 18px;
+    padding: 16px 20px;
+    text-align: center;
+    border: 2px solid #244C72;
+}
+
+/* TITLE */
+.institute-card h3 {
+    margin: 0 0 8px;
+    color: #244C72;
+    font-weight: 600;
+}
+
+/* DESCRIPTION */
+.institute-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.apply-info {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px;
+    line-height: 1.6;
+}
+
+.apply-info p {
+    margin-bottom: 14px;
+}
+
+.apply-info ol {
+    margin-left: 20px;
+    margin-bottom: 14px;
+}
+
+.apply-info a {
+    color: #244C72;
+    font-weight: 600;
+}
+
+.last-updated {
+    margin-top: 20px;
+}
+
+/* GRID */
+.course-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* CARD LINK */
+.course-card{
+    text-decoration: none;
+}
+
+/* SQUARE */
+.course-box{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background:#F2F4F7;
+    border: 2px solid #244C72;
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #244C72;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* HOVER */
+.course-card:hover .course-box{
+    background: #F2F4F7;
+}
+
+/* DETAILS BELOW */
+.course-details{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.detail-card{
+    border: 2px solid #244C72;
+    border-radius: 14px;
+    padding: 16px;
+    margin: 16px 0;
+    background:#F2F4F7
+}
+
+/* ---------------- RESPONSIVE (MOBILE + TABLET) ---------------- */
+
+/* Make images always flexible */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+}
+
+/* NAV: allow wrapping on smaller screens */
+.main-nav ul {
+    flex-wrap: wrap;
+}
+
+/* Buttons row: wrap nicely */
+.hero-buttons {
+    flex-wrap: wrap;
+}
+
+/* Contact layout: stack on mobile */
+@media (max-width: 768px) {
+    .top-bar {
+    padding: 12px 16px;
+    }
+
+    .main-nav ul {
+    gap: 12px;
+    padding: 12px;
+    }
+
+    .main-nav a {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    }
+
+    .hero {
+    height: auto;
+    padding: 18px 12px;
+    }
+
+
+    .hero-buttons {
+    gap: 10px;
+    }
+
+    .btn {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    }
+
+    .why-content {
+    max-width: 92%;
+    }
+
+    .contact-layout {
+    flex-direction: column;
+    align-items: stretch;
+    }
+
+    .map-box iframe {
+    min-height: 240px;
+    
+
+    .news-under-actions {
+    text-align: center;
+    }
+
+    .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 92%;
+    }
+
+    .institutes-list {
+    max-width: 92%;
+    }
+
+    .apply-info,
+    .course-details {
+    max-width: 92%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .course-grid {
+    grid-template-columns: 1fr;
+    }
+}
 }
